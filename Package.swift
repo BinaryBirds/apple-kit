@@ -13,7 +13,7 @@ let package = Package(
         .library(name: "AppleKit", targets: ["AppleKit"]),
     ],
     dependencies: [
-        .package(url: "git@github.com:BinaryBirds/core-kit", .branch("main")),
+        .package(url: "https://github.com/BinaryBirds/core-kit", .branch("main")),
     ],
     targets: [
         .target(name: "AppleKit", dependencies: [
