@@ -34,7 +34,7 @@ open class Button: AppleButton {
         #endif
     }
     
-    var touchHandler: ((AppleButton) -> Void)?
+    open var touchHandler: ((AppleButton) -> Void)?
     
     @objc func touchAction(_ sender: AppleButton) {
         self.touchHandler?(sender)
