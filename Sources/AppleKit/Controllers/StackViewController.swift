@@ -7,8 +7,8 @@
 
 open class StackViewController: ViewController {
     
-    weak var scrollView: ScrollView!
-    weak var stackView: StackView!
+    open weak var scrollView: ScrollView!
+    open weak var stackView: StackView!
     
     #if canImport(UIKit)
     open override func loadView() {
