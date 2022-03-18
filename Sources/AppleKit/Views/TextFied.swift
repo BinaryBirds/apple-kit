@@ -35,7 +35,7 @@ open class TextField: UITextField {
         initialize()
     }
     
-    convenience init(_ id: String, value: String? = nil, placeholder: String? = nil) {
+    public convenience init(_ id: String, value: String? = nil, placeholder: String? = nil) {
         self.init()
         
         self.id = id
