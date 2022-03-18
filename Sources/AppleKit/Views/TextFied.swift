@@ -12,20 +12,31 @@ open class TextField: UITextField {
     private override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.initialize()
+        initialize()
     }
     
     @available(*, unavailable)
     required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    public init(_ id: String, value: String? = nil, placeholder: String? = nil) {
+
+    public init() {
         super.init(frame: .zero)
+
+        initialize()
+    }
+    
+    convenience init(_ id: String, value: String? = nil, placeholder: String? = nil) {
+        self.init()
         
         self.id = id
         self.text = value
         self.placeholder = placeholder
+    }
+    
+    open func initialize() {
+        translatesAutoresizingMaskIntoConstraints = false
+
         backgroundColor = .secondarySystemBackground
         heightAnchor.constraint(equalToConstant: 44).isActive = true
         layer.cornerRadius = 15
@@ -35,12 +46,6 @@ open class TextField: UITextField {
         leftViewMode = .always
         rightView = paddingView
         rightViewMode = .always
-
-        self.initialize()
-    }
-    
-    open func initialize() {
-        self.translatesAutoresizingMaskIntoConstraints = false
     }
 }
 

@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "core-kit",
-        "repositoryURL": "git@github.com:BinaryBirds/core-kit",
+        "repositoryURL": "https://github.com/BinaryBirds/core-kit",
         "state": {
           "branch": "main",
           "revision": "6313ef990d52dbaf5771e2f8f893e5bbf5ad3190",
