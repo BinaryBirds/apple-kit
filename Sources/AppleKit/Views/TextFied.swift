@@ -35,14 +35,6 @@ open class TextField: UITextField {
         initialize()
     }
     
-    public convenience init(_ id: String, value: String? = nil, placeholder: String? = nil) {
-        self.init()
-        
-        self.id = id
-        self.text = value
-        self.placeholder = placeholder
-    }
-    
     open func initialize() {
         translatesAutoresizingMaskIntoConstraints = false
 
