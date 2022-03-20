@@ -26,6 +26,9 @@ open class ScrollView: AppleScrollView {
     }
     
     open func initialize() {
-        self.translatesAutoresizingMaskIntoConstraints = false
+        translatesAutoresizingMaskIntoConstraints = false
+#if canImport(UIKit)
+        alwaysBounceVertical = true
+#endif
     }
 }
