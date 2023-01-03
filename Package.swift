@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
@@ -13,11 +13,10 @@ let package = Package(
         .library(name: "AppleKit", targets: ["AppleKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/BinaryBirds/core-kit", .branch("main")),
     ],
     targets: [
         .target(name: "AppleKit", dependencies: [
-            .product(name: "CoreKit", package: "core-kit"),
+
         ]),
         .testTarget(name: "AppleKitTests", dependencies: [
             .target(name: "AppleKit")
