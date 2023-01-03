@@ -6,11 +6,11 @@
 //
 
 import XCTest
-@testable import AppleKit
+import AppleKit
 
 final class AppleKitTests: XCTestCase {
 
     func testExample() throws {
-
+        _ = View()
     }
 }
