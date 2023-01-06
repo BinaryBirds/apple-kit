@@ -42,6 +42,7 @@ public typealias AppleImage = NSImage
 public typealias AppleBezierPath = NSBezierPath
 public typealias AppleControl = NSControl
 public typealias AppleFont = NSFont
+public typealias AppleMenu = NSMenu
 
 // MARK: - controllers
 public typealias AppleScreen = NSScreen
