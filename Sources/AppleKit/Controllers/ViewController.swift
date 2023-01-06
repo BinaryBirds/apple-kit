@@ -60,7 +60,7 @@ open class ViewController: AppleViewController {
         loadMainView()
     }
     
-    func viewControllerDidChangeEffectiveAppearance() {
+    open func viewControllerDidChangeEffectiveAppearance() {
         
     }
 #endif
